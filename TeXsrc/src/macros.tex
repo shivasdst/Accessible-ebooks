@@ -1,0 +1,93 @@
+\usepackage{polyglossia}
+\usepackage{fontspec,graphicx}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{float}
+\usepackage{color}
+
+\floatstyle{plain}
+\floatplacement{Figure}{tbp}
+
+\usepackage[papersize={176mm,250mm},textwidth=145mm, textheight=200mm,
+headheight=6mm,headsep=5mm,topmargin=20mm,botmargin=19mm,
+leftmargin=17mm,rightmargin=17mm,footskip=7mm,cropmarks]{zwpagelayout} % 1/4 crown size
+
+
+\newenvironment{descriptionSimple}[1]%
+  {\begin{list}{}{\renewcommand{\makelabel}[1]{\textbf{##1:}\hfil}%
+    \settowidth{\labelwidth}{\textbf{#1:}}%
+    \setlength{\itemsep}{0ex}%
+    \setlength{\topsep}{-1ex}%
+    \setlength{\parsep}{0ex}%
+    \setlength{\partopsep}{0ex}%
+    \setlength{\leftmargin}{\labelwidth}\addtolength{\leftmargin}{\labelsep}}}%
+  {\end{list}}
+
+\setdefaultlanguage{hindi}
+%\setmainfont[Script=Devanagari,Ligatures=TeX,AutoFakeBold=3.5,AutoFakeSlant,WordSpace=1.2]{ApuDevNewUnicode}
+\setmainfont[Script=Devanagari,Ligatures=TeX,AutoFakeSlant,WordSpace=1.2]{ApuDevNewUnicode}
+\XeTeXgenerateactualtext 1
+\newfontscript{Devanagari}{deva,dev2}
+\def\paragraphTitle#1{\medbreak\noindent{\bfseries \color{red}{#1}}\\}
+\font\eng = cmr10 at 11pt
+% Define the \eng command as a localized version of \latinfont
+
+\linespread{1.1}
+\parindent=0pt
+\setlength{\parskip}{\baselineskip}
+
+\renewcommand{\arraystretch}{1.4}
+\def\captionshindi{%
+     \def\abstractname{सारांश}%
+     \def\appendixname{परिशिष्ट}%
+     \def\bibname{संदर ग्रन्थ}% (?)
+     \def\ccname{}%
+     \def\chaptername{अध्याय}%
+     \def\contentsname{विषय सूची}%
+     \def\enclname{}%
+     \def\figurename{चित्र}% रेखाचित्र
+     \def\headpagename{पृषठ}%
+     \def\headtoname{}%
+     \def\indexname{सूची}%
+     %              सूचक
+     %              अनुक्रमणिका
+     %              अनुक्रमणि
+     \def\listfigurename{चित्रों की सूची}%
+     \def\listtablename{तालिकाओं की सूची}%
+     \def\pagename{पृषठ}%
+     \def\partname{खणड}%
+     \def\prefacename{प्रस्तावना}% प्राक्कथन
+     \def\refname{हवाले}%
+     \def\tablename{टेबल}%
+     \def\seename{देखिए}%
+     \def\alsoname{और देखिए}%
+	 \def\alsoseename{और देखिए}%
+}
+
+\makeatletter
+\def\ps@plain{\let\@mkboth\@gobbletwo
+     \let\@oddhead\@empty\def\@oddfoot{\reset@font\hfil\eng\thepage
+     \hfil}\let\@evenhead\@empty\let\@evenfoot\@oddfoot}
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        {\huge\bfseries \color{red}{\@chapapp\space \thechapter}}
+        \par\nobreak
+        \vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    {\Huge \bfseries \color{red}{#1}}\par\nobreak
+    \vskip 40\p@
+  }}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-0.5ex \@plus -0.5ex \@minus -.1ex}%
+                                   {0.5ex \@plus.2ex}%
+                                   {\color{red}\normalfont\Large\bfseries}}
+\renewcommand\labelitemi{{\fontfamily{txr}\selectfont\textbullet}}
+\makeatother                                   
+                                   
+\pagestyle{plain}

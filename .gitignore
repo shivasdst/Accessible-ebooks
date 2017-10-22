@@ -1,0 +1,6 @@
+data_from_client/
+TeXsrc/*.aux
+TeXsrc/*.log
+TeXsrc/*.dvi
+TeXsrc/*.pdf
+TeXsrc/*.toc
