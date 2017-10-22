@@ -86,6 +86,78 @@
 			<navPoint id="navPoint-56" playOrder="56"><navLabel><text>2.10 सेल स्टाइल</text></navLabel><content src="chapter2.xhtml#id-2.10"/></navPoint>
 			<navPoint id="navPoint-57" playOrder="57"><navLabel><text>2.11 अपनी सेल स्टाइल्स बनाना</text></navLabel><content src="chapter2.xhtml#id-2.11"/></navPoint>
 			<navPoint id="navPoint-58" playOrder="58"><navLabel><text>2.12 कंडीशनल फॉरमेटिंग</text></navLabel><content src="chapter2.xhtml#id-2.12"/></navPoint>
-       </navPoint>        
+       </navPoint>
+      <navPoint id="navPoint-59" playOrder="59">
+         <navLabel>
+            <text>अध्याय 3</text>
+         </navLabel>
+         <content src="chapter3.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-60" playOrder="60">
+         <navLabel>
+            <text>अध्याय 4</text>
+         </navLabel>
+         <content src="chapter4.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-61" playOrder="61">
+         <navLabel>
+            <text>अध्याय 5</text>
+         </navLabel>
+         <content src="chapter5.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-62" playOrder="62">
+         <navLabel>
+            <text>अध्याय 6</text>
+         </navLabel>
+         <content src="chapter6.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-63" playOrder="63">
+         <navLabel>
+            <text>अध्याय 7</text>
+         </navLabel>
+         <content src="chapter7.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-64" playOrder="64">
+         <navLabel>
+            <text>अध्याय 8</text>
+         </navLabel>
+         <content src="chapter8.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-65" playOrder="65">
+         <navLabel>
+            <text>अध्याय 9</text>
+         </navLabel>
+         <content src="chapter9.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-66" playOrder="66">
+         <navLabel>
+            <text>अध्याय 10</text>
+         </navLabel>
+         <content src="chapter10.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-67" playOrder="67">
+         <navLabel>
+            <text>अध्याय 11</text>
+         </navLabel>
+         <content src="chapter11.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-68" playOrder="68">
+         <navLabel>
+            <text>अध्याय 12</text>
+         </navLabel>
+         <content src="chapter12.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-69" playOrder="69">
+         <navLabel>
+            <text>अध्याय 13</text>
+         </navLabel>
+         <content src="chapter13.xhtml"/>
+     </navPoint>                            
+      <navPoint id="navPoint-70" playOrder="70">
+         <navLabel>
+            <text>अध्याय 14</text>
+         </navLabel>
+         <content src="chapter14.xhtml"/>
+     </navPoint>                            
    </navMap>
 </ncx>
